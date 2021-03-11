@@ -13,3 +13,12 @@
 
 /* Theme customization starts here
 -------------------------------------------------------------- */
+
+.wpcf7-form .wpcf7-form-control.wpcf7-submit {
+    color: #000000 !important;
+}
+
+.wpcf7-form .wpcf7-form-control.wpcf7-submit:hover {
+    background-color: #777;
+    color: #fff !important;
+}
