@@ -19,7 +19,7 @@ add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 if ( ! function_exists( 'boldthemes_nav_menu' ) ) {
 	function boldthemes_nav_menu( $walker = false, $theme_location = 'primary' ) {
     ?>
-	
+
     <nav class="navbar navbar-expand-md navbar-dark background_nav fixed-top flex-column">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <a class="navigation-button">
@@ -30,7 +30,7 @@ if ( ! function_exists( 'boldthemes_nav_menu' ) ) {
         <div class="collapse navbar-collapse justify-content-center w-100" id="navbarNav" style="padding: 20px 0;">
             <ul class="navbar-nav">
                 <?php
-               
+
                 wp_nav_menu(array(
                 'theme_location' => 'primary',
                 'container' => false,
@@ -44,7 +44,7 @@ if ( ! function_exists( 'boldthemes_nav_menu' ) ) {
         </div>
         <div class="menu_utilits">
             <div class="icon"><a href="https://www.instagram.com/ironladysteak/?igshid=14y4t2r7c766a" target="_blank"><i class="fab fa-instagram"></i></a></div>
-            <div class="lang_icon"><ul><?php pll_the_languages( array( 'show_names' => 2 ) ); ?></ul></div>
+            <div class="lang_icon"><ul id="lang_choise"><?php pll_the_languages( array( 'show_names' => 2 ) ); ?></ul></div>
         </div>
     </nav>
     <?php }
