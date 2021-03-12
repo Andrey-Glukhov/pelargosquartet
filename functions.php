@@ -12,42 +12,34 @@ function my_theme_enqueue_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 
-/**
- * The SEED Team
- * Override Header menu output
- */
-if ( ! function_exists( 'boldthemes_nav_menu' ) ) {
-	function boldthemes_nav_menu( $walker = false, $theme_location = 'primary' ) {
-    ?>
 
-    <nav class="navbar navbar-expand-md navbar-dark background_nav fixed-top flex-column">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <a class="navigation-button">
-            <div class="animated-icon1"><span></span><span></span><span></span></div>
-            </a>
-        </button>
 
-        <div class="collapse navbar-collapse justify-content-center w-100" id="navbarNav" style="padding: 20px 0;">
-            <ul class="navbar-nav">
-                <?php
+add_filter( 'wp_nav_menu_items', 'child_theme_menu_items', 10, 2);
 
-                wp_nav_menu(array(
-                'theme_location' => 'primary',
-                'container' => false,
-                'menu_class' => 'navbar ml-auto',
-                'items_wrap' => '<li id="%1$s" data-scroll class="navbar-item %2$s">%3$s</li>',
-                'item_spacing' => 'preserve'
-                )
-                );
-                ?>
-            </ul>
-        </div>
-        <div class="menu_utilits">
-            <div class="icon"><a href="https://www.instagram.com/ironladysteak/?igshid=14y4t2r7c766a" target="_blank"><i class="fab fa-instagram"></i></a></div>
-            <div class="lang_icon"><ul id="lang_choise"><?php pll_the_languages( array( 'show_names' => 2 ) ); ?></ul></div>
-        </div>
-    </nav>
-    <?php }
+function child_theme_menu_items($items, $args) {
+    // get array of '<li> ... </li>' strings
+    preg_match_all('/<\s*?li\b[^>]*>(.*?)<\/li\b[^>]*>/s', $items, $items_array );
+    error_log('--->1' . print_r($items,true));
+    error_log('--->3' . print_r($items_array,true));
+    $position = floor(count($items_array[0])/2);
+    $homestring = array('<li class="menu-item menu-item-type-post_type menu-item-object-page menu_homelink">' . child_theme_menu_logo() . '</li>');
+    $result = array_merge(array_slice($items_array[0], 0, $position), $homestring, array_slice($items_array[0], $position));
+    error_log('--->3' . print_r($result,true));
+    $items = implode('', $result);
+    return $items;
+}
+
+function child_theme_menu_logo() {
+    $logo = boldthemes_get_option( 'logo' );
+    $logo_string = '';
+    $home_link =  home_url( '/' ) ;
+	if ( $logo != '' && $logo != ' ' ) {
+		
+			$logo_string .= '<a href="' . esc_url( $home_link ) . '"><img class="btMainLogo" src="' . esc_attr( $logo ) . '" alt="' . esc_attr( get_bloginfo( 'name' ) ) . '"></a>';
+	} else {
+		$logo_string .= '<a href="' .  esc_url(home_url( '/' )) . '">' .  esc_attr( get_bloginfo( 'name' ) ) . '</a>';
+	}
+    return $logo_string;
 }
 
 ?>
