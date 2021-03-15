@@ -14,14 +14,52 @@
 /* Theme customization starts here
 -------------------------------------------------------------- */
 
-.btMenuHorizontal.btMenuCenter .menuPort .leftNav{
-  position: relative !important;
-  width: 100% !important;
-  padding-right: 0 !important;
-  right: auto !important;
-  left: 0 !important;
-  margin-right: 0 !important;
+
+/* .wpcf7-form .wpcf7-form-control.wpcf7-submit {
+    color: #000000 !important;
 }
+
+.wpcf7-form .wpcf7-form-control.wpcf7-submit:hover {
+    background-color: #777;
+    color: #fff !important;
+} */
+
+.menuPort .leftNav {
+    position: relative !important;
+    width: 100% !important;
+    padding-right: 0 !important;
+    right: auto !important;
+    left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.menuPort .leftNav ul a {
+    text-transform: capitalize;
+}
+
+#navbarNav>ul.navbar-nav {
+    /* width: 100vw; */
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-color: #191919;
+}
+
+.btMenuHorizontal.btMenuCenter .menuPort .leftNav ul {
+    float: none !important;
+}
+
+.lang_icon {
+    position: fixed;
+    top: 13px;
+    right: 13px;
+    z-index: 10010;
+}
+
+.lang_icon .lang-item {
+    display: block;
+}
+
 #navbarNav > ul.navbar-nav{
   width: 100vw;
   height: auto;
@@ -33,18 +71,52 @@
 .navbar-toggler{
   position: absolute;
 }
+
 #lang_choise{
   display: flex;
 }
-.lang-item.lang-item-59.lang-item-nl.lang-item-first>a{
-  padding-right: 2px;
+
+.lang_icon .lang-item a {
+    color: #fff;
+    font-size: 13px;
 }
-.lang-item.lang-item-75.lang-item-en.current-lang>a{
-  padding-left: 2px;
+
+.btMenuVertical .lang_icon .lang-item a {
+    /* color: #555; */
+    font-size: 13px;
+}
+
+#lang_choise {
+    display: flex;
+}
+
+.lang-item.lang-item-59.lang-item-nl.lang-item-first>a {
+    padding-right: 2px;
 }
 .menuPort{
   width: 100vw;
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.lang-item.lang-item-75.lang-item-en.current-lang>a {
+    padding-left: 2px;
+}
+
+.btMenuVerticalLeft.btMenuVerticalOn .btContentWrap.btClear {
+    transform: none;
+}
+
+.btMenuVerticalLeft.btMenuVerticalOn #navbarNav>ul.navbar-nav {
+    flex-direction: column;
+}
+
+.btMenuVertical .mainHeader nav ul li.menu_homelink {
+    display: none;
+}
+
+.gutter div.port {
+    max-width: initial;
+    padding: 0;
 }
