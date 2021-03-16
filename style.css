@@ -120,3 +120,11 @@
     max-width: initial;
     padding: 0;
 }
+.seventy>span>img{
+  width: 70%;
+  height: auto;
+  margin: auto;
+}
+.btLightSkin{
+  background-color: #eae4da !important;
+}
