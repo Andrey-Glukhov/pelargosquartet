@@ -42,7 +42,7 @@ echo boldthemes_preloader_html(); ?>
 
     <div class="btVerticalHeaderTop">
 		<?php if ( has_nav_menu( 'primary' ) ) { ?>
-		<div class="btVerticalMenuTrigger">&nbsp;<?php echo boldthemes_get_icon_html( array( "icon" => "fa_f0c9", "url" => "#" ) ); ?></div>
+		<div class="btVerticalMenuTrigger childTrigger">&nbsp;<?php echo boldthemes_get_icon_html( array( "icon" => "fa_f0c9", "url" => "#" ) ); ?></div>
 		<?php } ?>
 		<div class="childLogoArea">
 			<div class="logo">

@@ -19,12 +19,12 @@ add_filter( 'wp_nav_menu_items', 'child_theme_menu_items', 10, 2);
 function child_theme_menu_items($items, $args) {
     // get array of '<li> ... </li>' strings
     preg_match_all('/<\s*?li\b[^>]*>(.*?)<\/li\b[^>]*>/s', $items, $items_array );
-    error_log('--->1' . print_r($items,true));
-    error_log('--->3' . print_r($items_array,true));
+    //error_log('--->1' . print_r($items,true));
+    //error_log('--->3' . print_r($items_array,true));
     $position = floor(count($items_array[0])/2);
     $homestring = array('<li class="menu-item menu-item-type-post_type menu-item-object-page menu_homelink">' . child_theme_menu_logo() . '</li>');
     $result = array_merge(array_slice($items_array[0], 0, $position), $homestring, array_slice($items_array[0], $position));
-    error_log('--->3' . print_r($result,true));
+    //error_log('--->3' . print_r($result,true));
     $items = implode('', $result);
     return $items;
 }
@@ -81,4 +81,21 @@ function showhide_shortcode( $atts, $content = null ) {
 	return $output;
 }
 
+
+add_action( 'wp_enqueue_scripts', 'child_dequeue_and_then_enqueue', 100 );
+
+function child_dequeue_and_then_enqueue() {
+    // Dequeue (remove) parent theme script
+    wp_dequeue_script( 'squadrone-header' );
+	wp_deregister_script( 'squadrone-header' );
+    // Enqueue replacement child theme script
+    wp_enqueue_script(
+        'squadrone-header',
+        get_stylesheet_directory_uri() . '/framework/js/header.misc.js',
+        array( 'jquery' ),
+		'',
+		true
+    );
+	
+}
 ?>
