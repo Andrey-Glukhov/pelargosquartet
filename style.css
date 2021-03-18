@@ -14,15 +14,14 @@
 /* Theme customization starts here
 -------------------------------------------------------------- */
 
-
-/* .wpcf7-form .wpcf7-form-control.wpcf7-submit {
+.wpcf7-form .wpcf7-form-control.wpcf7-submit {
     color: #000000 !important;
 }
 
 .wpcf7-form .wpcf7-form-control.wpcf7-submit:hover {
-    background-color: #777;
+    background-color: #191919;
     color: #fff !important;
-} */
+}
 
 .menuPort .leftNav {
     position: relative !important;
@@ -46,15 +45,6 @@
     color: #191919;
     text-decoration: underline;
 }
-
-
-/* #navbarNav>ul.navbar-nav {
-height: auto;
-display: flex;
-justify-content: center;
-background-color: #eae4da !important;
-}
-*/
 
 .btMenuHorizontal.btMenuCenter .menuPort .leftNav ul {
     float: none !important;
@@ -93,7 +83,6 @@ background-color: #eae4da !important;
 }
 
 .btMenuVertical .lang_icon .lang-item a {
-    /* color: #555; */
     font-size: 13px;
 }
 
@@ -157,12 +146,6 @@ background-color: #eae4da !important;
     position: relative;
     background-color: #eae4da;
 }
-
-/* .childLogoArea span {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-} */
 .childLogoArea span a {
     margin-left: auto;
     margin-right: auto;
