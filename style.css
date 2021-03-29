@@ -40,8 +40,9 @@
 .menuPort .leftNav ul a img {
     max-height: 50px;
 }
-.menu_homelink>a{
-  padding: 5px 10px 0px 10px !important;
+
+.menu_homelink>a {
+    padding: 5px 10px 0px 10px !important;
 }
 
 .menuPort .leftNav ul a:hover {
@@ -109,52 +110,59 @@
     padding-top: 2em;
 }
 
-<<<<<<< HEAD
-
-=======
-.btVerticalHeaderTop{
-  padding: 0 !important;
+.btVerticalHeaderTop {
+    padding: 0 !important;
 }
->>>>>>> ad3b147adbd54afeb12bb4218566d58544867c8c
 
 .lang-item.lang-item-75.lang-item-en.current-lang>a {
     padding-left: 2px;
 }
+
 .btMenuVerticalLeft.btMenuVerticalOn .btContentWrap.btClear {
     transform: none;
 }
+
 .btMenuVerticalLeft.btMenuVerticalOn #navbarNav>ul {
     background-color: #191919;
 }
+
 .btMenuVerticalLeft.btMenuVerticalOn #navbarNav>ul.navbar-nav {
     flex-direction: column;
     background-color: #191919;
 }
+
 .btMenuVerticalLeft.btMenuVerticalOn #navbarNav>ul {
     background-color: #191919;
 }
+
 .btMenuVerticalLeft.btMenuVerticalOn #navbarNav>ul.navbar-nav a {
     color: #fff;
 }
+
 .btMenuVertical .mainHeader nav ul li.menu_homelink {
     display: none;
 }
+
 .gutter div.port {
     max-width: initial;
     padding: 0;
 }
+
 .seventy>span>img {
     width: 70%;
     height: auto;
     margin: auto;
 }
+
 .btLightSkin {
     background-color: #eae4da !important;
 }
+
 .childLogoArea {
     position: relative;
     background-color: #eae4da;
 }
+
 .childLogoArea span a {
     margin-left: auto;
     margin-right: auto;
@@ -162,17 +170,21 @@
     width: fit-content;
     padding: 1em;
 }
+
 .childLogoArea span a img {
     max-height: 50px;
 }
-.childLogoArea span a{
-  padding: 5px 10px 0 10px;
+
+.childLogoArea span a {
+    padding: 5px 10px 0 10px;
 }
+
 .btTransparentLightHeader .btVerticalMenuTrigger.childTrigger .bt_bb_icon:before,
 .btTransparentLightHeader .btVerticalMenuTrigger.childTrigger .bt_bb_icon:after,
 .btTransparentLightHeader .btVerticalMenuTrigger.childTrigger .bt_bb_icon .bt_bb_icon_holder:before {
     border-top-color: #191919;
 }
+
 .btTransparentLightHeader .btVerticalMenuTrigger.childTrigger:hover .bt_bb_icon:before,
 .btTransparentLightHeader .btVerticalMenuTrigger.childTrigger:hover .bt_bb_icon:after,
 .btTransparentLightHeader .btVerticalMenuTrigger.childTrigger:hover .bt_bb_icon .bt_bb_icon_holder:before {
