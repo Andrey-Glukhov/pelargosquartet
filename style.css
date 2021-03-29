@@ -38,7 +38,10 @@
 }
 
 .menuPort .leftNav ul a img {
-    max-height: 25px;
+    max-height: 50px;
+}
+.menu_homelink>a{
+  padding: 5px 10px 0px 10px !important;
 }
 
 .menuPort .leftNav ul a:hover {
@@ -106,8 +109,10 @@
     padding-top: 2em;
 }
 
-
+.btVerticalHeaderTop{
+  padding: 0 !important;
 }
+
 .lang-item.lang-item-75.lang-item-en.current-lang>a {
     padding-left: 2px;
 }
@@ -154,7 +159,10 @@
     padding: 1em;
 }
 .childLogoArea span a img {
-    max-height: 25px;
+    max-height: 50px;
+}
+.childLogoArea span a{
+  padding: 5px 10px 0 10px;
 }
 .btTransparentLightHeader .btVerticalMenuTrigger.childTrigger .bt_bb_icon:before,
 .btTransparentLightHeader .btVerticalMenuTrigger.childTrigger .bt_bb_icon:after,
