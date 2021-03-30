@@ -145,8 +145,16 @@
     background-color: #191919;
 }
 
+.mainHeader {
+    position: fixed !important;
+}
+
 .btMenuVertical .mainHeader {
     z-index: 10010 !important;
+}
+
+.btVerticalHeaderTop {
+    position: fixed;
 }
 
 .btMenuVerticalLeft.btMenuVerticalOn #navbarNav>ul.navbar-nav a {
