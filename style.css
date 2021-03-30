@@ -145,6 +145,10 @@
     background-color: #191919;
 }
 
+.btMenuVertical .mainHeader {
+    z-index: 10010 !important;
+}
+
 .btMenuVerticalLeft.btMenuVerticalOn #navbarNav>ul.navbar-nav a {
     color: #fff;
 }
@@ -189,6 +193,12 @@
     padding: 5px 10px 0 10px;
 }
 
+
+/* .btMenuVertical .btVerticalMenuTrigger.childTrigger {
+    position: absolute;
+    right: -30px;
+} */
+
 .btTransparentLightHeader .btVerticalMenuTrigger.childTrigger .bt_bb_icon:before,
 .btTransparentLightHeader .btVerticalMenuTrigger.childTrigger .bt_bb_icon:after,
 .btTransparentLightHeader .btVerticalMenuTrigger.childTrigger .bt_bb_icon .bt_bb_icon_holder:before {
@@ -200,4 +210,16 @@
 .btTransparentLightHeader .btVerticalMenuTrigger.childTrigger:hover .bt_bb_icon .bt_bb_icon_holder:before {
     border-top-color: #191919 !important;
     border-top-width: 3px !important;
+}
+
+body:not(.btPageTransitions) {
+    min-height: 100vw !important;
+}
+
+.btMenuVerticalLeft.btMenuVerticalOn .btVerticalHeaderTop {
+    transform: none !important;
+}
+
+.btMenuVerticalLeft.btMenuVerticalOn .btVerticalMenuTrigger.childTrigger {
+    transform: translateX(320px);
 }
