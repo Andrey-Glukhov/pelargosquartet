@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> <?php boldthemes_theme_data(); ?>>
+<script src="https://kit.fontawesome.com/52d51e5636.js" crossorigin="anonymous"></script>
 <head>
 
 <?php
