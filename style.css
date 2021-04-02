@@ -215,6 +215,11 @@
 
 .btVerticalHeaderTop {
     position: fixed !important;
+    border-bottom: black 1px solid;
+}
+
+.btContentWrap {
+    margin-top: 80px;
 }
 
 
