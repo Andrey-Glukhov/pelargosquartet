@@ -213,6 +213,10 @@
     padding: 5px 10px 0 10px;
 }
 
+.btVerticalHeaderTop {
+    position: fixed !important;
+}
+
 
 /* .btMenuVertical .btVerticalMenuTrigger.childTrigger {
     position: absolute;
