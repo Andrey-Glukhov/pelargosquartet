@@ -228,10 +228,23 @@
     right: -30px;
 } */
 
+.btTransparentLightHeader .btVerticalMenuTrigger.childTrigger {
+    position: absolute;
+    z-index: 10050;
+    transition: all 600ms;
+    /* right: -40px; */
+}
+
 .btTransparentLightHeader .btVerticalMenuTrigger.childTrigger .bt_bb_icon:before,
 .btTransparentLightHeader .btVerticalMenuTrigger.childTrigger .bt_bb_icon:after,
 .btTransparentLightHeader .btVerticalMenuTrigger.childTrigger .bt_bb_icon .bt_bb_icon_holder:before {
     border-top-color: #191919;
+}
+
+.btTransparentLightHeader.btMenuVerticalOn .btVerticalMenuTrigger.childTrigger .bt_bb_icon:before,
+.btTransparentLightHeader.btMenuVerticalOn .btVerticalMenuTrigger.childTrigger .bt_bb_icon:after,
+.btTransparentLightHeader.btMenuVerticalOn .btVerticalMenuTrigger.childTrigger .bt_bb_icon .bt_bb_icon_holder:before {
+    border-top-color: #fff;
 }
 
 .btTransparentLightHeader .btVerticalMenuTrigger.childTrigger:hover .bt_bb_icon:before,
@@ -242,11 +255,23 @@
     /* transform: none !important */
 }
 
+.btTransparentLightHeader.btMenuVerticalOn .btVerticalMenuTrigger.childTrigger:hover .bt_bb_icon:before,
+.btTransparentLightHeader.btMenuVerticalOn .btVerticalMenuTrigger.childTrigger:hover .bt_bb_icon:after,
+.btTransparentLightHeader.btMenuVerticalOn .btVerticalMenuTrigger.childTrigger:hover .bt_bb_icon .bt_bb_icon_holder:before {
+    border-top-color: #fff !important;
+    /* border-top-width: 2px !important; */
+    /* transform: none !important */
+}
+
 .btVerticalMenuTrigger:hover .bt_bb_icon:before {
     -webkit-transform: none !important;
     -moz-transform: none !important;
     -ms-transform: none !important;
     transform: none !important;
+}
+
+.btPageWrap .btVerticalMenuTrigger {
+    display: none;
 }
 
 .btVerticalMenuTrigger:hover .bt_bb_icon:after {
@@ -265,12 +290,17 @@ body:not(.btPageTransitions) {
 }
 
 .btMenuVerticalLeft.btMenuVerticalOn .btVerticalMenuTrigger.childTrigger {
-    transform: translateX(320px);
+    transform: translateX(300px);
 }
 
 .bt_bb_section[style*="background-image"] {
     background-size: 100% auto !important;
     background-position: top !important;
+}
+
+.btMenuVertical .mainHeader .menuPort {
+    justify-content: center;
+    height: 60vh;
 }
 
 .quote {
