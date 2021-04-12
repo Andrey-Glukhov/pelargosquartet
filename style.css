@@ -15,12 +15,12 @@
 -------------------------------------------------------------- */
 
 .wpcf7-form .wpcf7-form-control.wpcf7-submit {
-    color: #000000 !important;
+    color: rgb(68, 68, 68) !important;
     border: 1px solid rgba(0, 0, 0, .4);
 }
 
 .wpcf7-form .wpcf7-form-control.wpcf7-submit:hover {
-    background-color: #191919;
+    background-color: rgb(68, 68, 68);
     color: #fff !important;
 }
 
@@ -219,7 +219,7 @@
 }
 
 .btContentWrap {
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 
@@ -364,14 +364,55 @@ body:not(.btPageTransitions) {
     margin: 40px 0;
 }
 
-.contact_info .bt_bb_column_content .bt_bb_text {
-    width: 80%;
-    margin: auto
+.contact_info .bt_bb_column_content {
+    width: 80% !important;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-.contact_info .bt_bb_column_content .bt_bb_contact_form_7 {
-    width: 80%;
-    margin: auto
+.contact_info .bt_bb_column_content h3 {
+    font-size: 2.2rem !important;
+    padding-bottom: 18px;
+}
+
+.contact_info .bt_bb_column_content h4 {
+    font-size: 1.4rem !important;
+    padding-bottom: 2px;
+}
+
+.contact_info .bt_bb_column_content i {
+    font-size: 1.3rem !important;
+    line-height: 2.1rem;
+    padding-right: 10px;
+}
+
+.contect_icons_wraper {
+    margin-top: 20px;
+}
+
+.contact_info .bt_bb_column_content .contect_icons_wraper>a>i {
+    color: rgb(68, 68, 68);
+    font-size: 1.9rem !important;
+}
+
+.wpcf7-form .wpcf7-submit {
+    box-shadow: none !important;
+}
+
+ul.navbar-nav>li.current_page_item>a {
+    color: #ec951a;
+}
+
+.grid_wraper {
+    width: 100% !important;
+}
+
+.media_grid_col {
+    padding: 0 !important;
+}
+
+.btVerticalMenuTrigger .bt_bb_icon {
+    margin: 22px 0px 22px 20px !important;
 }
 
 @media only screen and (max-width: 420px) {
@@ -387,6 +428,24 @@ body:not(.btPageTransitions) {
     }
     .seventy>span>img {
         width: 90%;
+    }
+    .wpcf7-form-control.wpcf7-submit {
+        margin: auto;
+    }
+    .contact_info .bt_bb_column_content .bt_bb_text h4 {
+        font-size: 1.3rem;
+    }
+    .contact_info .bt_bb_column_content h3 {
+        font-size: 1.9rem !important;
+    }
+    .contact_info .bt_bb_column_content h4 {
+        font-size: 1rem !important;
+    }
+    .contact_info .bt_bb_column_content i {
+        font-size: 0.9rem !important;
+    }
+    .contact_info>.bt_bb_column_content {
+        width: 90% !important;
     }
 }
 
@@ -404,6 +463,9 @@ body:not(.btPageTransitions) {
         width: 70% !important;
         margin: auto;
     }
+    .wpcf7-form-control.wpcf7-submit {
+        margin: auto;
+    }
 }
 
 
@@ -418,6 +480,9 @@ body:not(.btPageTransitions) {
     }
     .bt_bb_row>.bt_bb_column.about_text_wraper>.bt_bb_column_content {
         width: 70% !important;
+        margin: auto;
+    }
+    .wpcf7-form-control.wpcf7-submit {
         margin: auto;
     }
 }
