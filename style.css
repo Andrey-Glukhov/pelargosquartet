@@ -289,6 +289,8 @@
         .btMenuVertical .mainHeader .menuPort {
             justify-content: center;
             height: 60vh;
+            background-color: #191919;
+            border: none;
         }
         
         .quote {
