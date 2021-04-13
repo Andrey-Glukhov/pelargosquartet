@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> <?php boldthemes_theme_data(); ?>>
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <script src="https://kit.fontawesome.com/52d51e5636.js" crossorigin="anonymous"></script>
 <head>
 
@@ -44,7 +43,7 @@ echo boldthemes_preloader_html(); ?>
 
     <div class="btVerticalHeaderTop">
 		<?php if ( has_nav_menu( 'primary' ) ) { ?>
-		<div class="btVerticalMenuTrigger childTrigger">&nbsp;<?php echo boldthemes_get_icon_html( array( "icon" => "fa_f0c9", "url" => "#" ) ); ?></div>
+		
 		<?php } ?>
 		<div class="childLogoArea">
 			<div class="logo">
@@ -54,7 +53,9 @@ echo boldthemes_preloader_html(); ?>
 			</div><!-- /logo -->
 		</div><!-- /btLogoArea -->
 	</div>
-	<header class="mainHeader btClear <?php echo esc_attr( $header_extra_class ); ?>">	
+	<div class="btVerticalMenuTrigger childTrigger">&nbsp;<?php echo boldthemes_get_icon_html( array( "icon" => "fa_f0c9", "url" => "#" ) ); ?></div>
+	<header class="mainHeader btClear <?php echo esc_attr( $header_extra_class ); ?>">
+	
 		<div class="mainHeaderInner">
 				<div class="btLogoArea menuHolder btClear">
 					<div class="port">
@@ -79,12 +80,14 @@ echo boldthemes_preloader_html(); ?>
 											?>								
 										</ul>
 									</div>
-							
+										
 							</nav>
+							
 						</div><!-- .menuPort -->
 					</div><!-- /port -->
 				</div><!-- / inner header for scrolling -->
 		</div><!-- / inner header for scrolling -->
+		
     </header><!-- /.mainHeader -->
 	<div class="lang_icon"><ul id="lang_choise"><?php pll_the_languages( array( 'show_names' => 2 ) ); ?></ul></div>
 	<div class="btContentWrap btClear">
