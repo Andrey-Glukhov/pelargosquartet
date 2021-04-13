@@ -9,422 +9,328 @@
  Tags:         one-column, right-sidebar, custom-menu, featured-images, sticky-post, theme-options, threaded-comments, translation-ready
  Text Domain:  squadrone-child
 */
-    /* Theme customization starts here
+        /* Theme customization starts here
 -------------------------------------------------------------- */
-    
-    .wpcf7-form .wpcf7-form-control.wpcf7-submit {
-        color: rgb(68, 68, 68) !important;
-        border: 1px solid rgba(0, 0, 0, .4);
-    }
-    
-    .wpcf7-form .wpcf7-form-control.wpcf7-submit:hover {
-        background-color: rgb(68, 68, 68);
-        color: #fff !important;
-    }
-    
-    .wpcf7-form .wpcf7-submit {
-        -webkit-box-shadow: 0 0 0 3em #eae4da inset;
-        box-shadow: 0 0 0 3em #eae4da inset;
-    }
-    
-    .menuPort .leftNav {
-        position: relative !important;
-        width: 100% !important;
-        padding-right: 0 !important;
-        right: auto !important;
-        left: 0 !important;
-        margin-right: 0 !important;
-    }
-    
-    .menuPort .leftNav ul a {
-        text-transform: uppercase;
-        color: #191919;
-    }
-    
-    .menuPort nav ul li {
-        margin-top: auto !important;
-        margin-bottom: auto !important;
-    }
-    
-    .menuPort .leftNav ul a img {
-        max-height: 50px;
-    }
-    
-    .menu_homelink>a {
-        padding: 5px 10px 0px 10px !important;
-    }
-    
-    .menuPort .leftNav ul a:hover {
-        color: #191919;
-        text-decoration: underline;
-    }
-    
-    .btMenuHorizontal.btMenuCenter .menuPort .leftNav ul {
-        float: none !important;
-    }
-    
-    .lang_icon {
-        position: fixed;
-        top: 13px;
-        right: 13px;
-        z-index: 10010;
-    }
-    
-    .lang_icon .lang-item {
-        display: block;
-    }
-    
-    .btMenuVertical #navbarNav>ul.navbar-nav {
-        flex-direction: column;
-        color: #eae4da;
-        background-color: #000;
-    }
-    
-    #navbarNav>ul.navbar-nav {
-        height: auto;
-        display: flex;
-        justify-content: center;
-        background-color: #eae4da;
-        float: none;
-    }
-    
-    .navbar-toggler {
-        position: absolute;
-    }
-    
-    #lang_choise {
-        display: flex;
-    }
-    
-    .lang_icon .lang-item a {
-        color: #191919;
-        font-size: 13px;
-    }
-    
-    .btMenuVertical .lang_icon .lang-item a {
-        font-size: 13px;
-    }
-    
-    #lang_choise {
-        display: flex;
-    }
-    
-    .lang-item.lang-item-59.lang-item-nl.lang-item-first>a {
-        padding-right: 2px;
-    }
-    
-    .menuPort {
-        width: 100vw;
-        position: absolute;
-        top: 0;
-        left: 0;
-        border-bottom: solid 2px rgb(68, 68, 68);
-        background-color: #eae4da;
-    }
-    
-    .bt_bb_headline {
-        padding-top: 2em;
-    }
-    
-    .btVerticalHeaderTop {
-        padding: 0 !important;
-    }
-    
-    .lang-item.lang-item-75.lang-item-en.current-lang>a {
-        padding-left: 2px;
-    }
-    
-    .btMenuVerticalLeft.btMenuVerticalOn .btContentWrap.btClear {
-        transform: none;
-    }
-    
-    .btMenuVerticalLeft.btMenuVerticalOn .btContentWrap {
-        transform: none !important;
-    }
-    
-    .btMenuVerticalLeft.btMenuVerticalOn #navbarNav>ul {
-        background-color: #191919;
-    }
-    
-    .btMenuVerticalLeft.btMenuVerticalOn #navbarNav>ul.navbar-nav {
-        flex-direction: column;
-        background-color: #191919;
-    }
-    
-    .btMenuVerticalLeft.btMenuVerticalOn #navbarNav>ul {
-        background-color: #191919;
-    }
-    
-    .mainHeader {
-        position: fixed !important;
-    }
-    
-    .btMenuVertical .mainHeader {
-        z-index: 10010 !important;
-    }
-    
-    .btVerticalHeaderTop {
-        position: fixed;
-    }
-    
-    .btMenuVerticalLeft.btMenuVerticalOn #navbarNav>ul.navbar-nav a {
-        color: #fff;
-    }
-    
-    .btMenuVertical .mainHeader nav ul li.menu_homelink {
-        display: none;
-    }
-    
-    .gutter div.port {
-        max-width: initial;
-        padding: 0;
-    }
-    
-    .seventy>span>img {
-        width: 70%;
-        height: auto;
-        margin: auto;
-        padding-bottom: 40px;
-    }
-    
-    .btLightSkin {
-        background-color: #eae4da !important;
-    }
-    
-    .childLogoArea {
-        position: relative;
-        background-color: #eae4da;
-    }
-    
-    .childLogoArea span a {
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        width: fit-content;
-        padding: 1em;
-    }
-    
-    .childLogoArea span a img {
-        max-height: 50px;
-    }
-    
-    .childLogoArea span a {
-        padding: 5px 10px 0 10px;
-    }
-    
-    .btVerticalHeaderTop {
-        position: fixed !important;
-        border-bottom: black 1px solid;
-    }
-    
-    .btContentWrap {
-        margin-top: 60px;
-    }
-    /* .btMenuVertical .btVerticalMenuTrigger.childTrigger {
-    position: absolute;
-    right: -30px;
-} */
-    
-    .btTransparentLightHeader .btVerticalMenuTrigger.childTrigger {
-        position: absolute;
-        z-index: 10050;
-        transition: all 600ms;
-        /* right: -40px; */
-    }
-    
-    .btTransparentLightHeader .btVerticalMenuTrigger.childTrigger .bt_bb_icon:before,
-    .btTransparentLightHeader .btVerticalMenuTrigger.childTrigger .bt_bb_icon:after,
-    .btTransparentLightHeader .btVerticalMenuTrigger.childTrigger .bt_bb_icon .bt_bb_icon_holder:before {
-        border-top-color: #191919;
-    }
-    
-    .btTransparentLightHeader.btMenuVerticalOn .btVerticalMenuTrigger.childTrigger .bt_bb_icon:before,
-    .btTransparentLightHeader.btMenuVerticalOn .btVerticalMenuTrigger.childTrigger .bt_bb_icon:after,
-    .btTransparentLightHeader.btMenuVerticalOn .btVerticalMenuTrigger.childTrigger .bt_bb_icon .bt_bb_icon_holder:before {
-        border-top-color: #fff;
-    }
-    
-    .btTransparentLightHeader .btVerticalMenuTrigger.childTrigger:hover .bt_bb_icon:before,
-    .btTransparentLightHeader .btVerticalMenuTrigger.childTrigger:hover .bt_bb_icon:after,
-    .btTransparentLightHeader .btVerticalMenuTrigger.childTrigger:hover .bt_bb_icon .bt_bb_icon_holder:before {
-        border-top-color: #191919 !important;
-        border-top-width: 2px !important;
-        /* transform: none !important */
-    }
-    
-    .btTransparentLightHeader.btMenuVerticalOn .btVerticalMenuTrigger.childTrigger:hover .bt_bb_icon:before,
-    .btTransparentLightHeader.btMenuVerticalOn .btVerticalMenuTrigger.childTrigger:hover .bt_bb_icon:after,
-    .btTransparentLightHeader.btMenuVerticalOn .btVerticalMenuTrigger.childTrigger:hover .bt_bb_icon .bt_bb_icon_holder:before {
-        border-top-color: #fff !important;
-        /* border-top-width: 2px !important; */
-        /* transform: none !important */
-    }
-    
-    .btVerticalMenuTrigger:hover .bt_bb_icon:before {
-        -webkit-transform: none !important;
-        -moz-transform: none !important;
-        -ms-transform: none !important;
-        transform: none !important;
-    }
-    
-    .btPageWrap .btVerticalMenuTrigger {
-        display: none;
-    }
-    
-    .btVerticalMenuTrigger:hover .bt_bb_icon:after {
-        -webkit-transform: none !important;
-        -moz-transform: none !important;
-        -ms-transform: none !important;
-        transform: none !important;
-    }
-    
-    body:not(.btPageTransitions) {
-        min-height: 100vw !important;
-    }
-    
-    .btMenuVerticalLeft.btMenuVerticalOn .btVerticalHeaderTop {
-        transform: none !important;
-    }
-    
-    .btMenuVerticalLeft.btMenuVerticalOn .btVerticalMenuTrigger.childTrigger {
-        transform: translateX(300px);
-    }
-    
-    .bt_bb_section[style*="background-image"] {
-        background-size: 100% auto !important;
-        background-position: top !important;
-    }
-    
-    .btMenuVertical .mainHeader .menuPort {
-        justify-content: center;
-        height: 60vh;
-    }
-    
-    .quote {
-        padding: 30px 50px;
-        font-size: 1rem;
-    }
-    
-    .bt_bb_headline>.bt_bb_headline_subheadline {
-        font-size: 1rem !important;
-        text-align: right;
-    }
-    
-    .bt_bb_row>.bt_bb_column.about_text_wraper>.bt_bb_column_content {
-        width: 80% !important;
-        text-align: left;
-    }
-    
-    #about_cover.bt_bb_section[style*="background-image"] {
-        background-size: 50% auto !important;
-        background-position: top left !important;
-    }
-    
-    .page_title {
-        padding-top: 100px;
-    }
-    
-    .page_title>span {
-        font-size: 2.8rem !important;
-    }
-    
-    .bt_bb_headline .bt_bb_headline_superheadline {
-        font-size: 2.8rem !important;
-    }
-    
-    #st_about1-toggle-show8,
-    #st_about2-toggle-show8,
-    #st_about3-toggle-show8,
-    #st_about4-toggle-show8,
-    #st_about4-toggle-hide8,
-    #st_about3-toggle-hide8,
-    #st_about2-toggle-hide8,
-    #st_about1-toggle-hide8 {
-        color: #000000 !important;
-        text-decoration: underline;
-        font-size: 1.1rem;
-    }
-    
-    .about_text_wraper>.bt_bb_column_content>.bt_bb_text>p {
-        font-size: 1.1rem;
-    }
-    
-    .about_text_wraper>.bt_bb_column_content>.bt_bb_text>h3 {
-        font-size: 1.3rem;
-    }
-    
-    .about_text_wraper>.bt_bb_column_content>.bt_bb_text>.sh-content.sh-show>p {
-        font-size: 1.1rem;
-    }
-    
-    .persone_wraper {
-        margin: 40px 0;
-    }
-    
-    .contact_info .bt_bb_column_content {
-        width: 80% !important;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    
-    .contact_info .bt_bb_column_content h3 {
-        font-size: 2.2rem !important;
-        padding-bottom: 18px;
-    }
-    
-    .contact_info .bt_bb_column_content h4 {
-        font-size: 1.4rem !important;
-        padding-bottom: 2px;
-    }
-    
-    .contact_info .bt_bb_column_content i {
-        font-size: 1.3rem !important;
-        line-height: 2.1rem;
-        padding-right: 10px;
-    }
-    
-    .contect_icons_wraper {
-        margin-top: 20px;
-    }
-    
-    .contact_info .bt_bb_column_content .contect_icons_wraper>a>i {
-        color: rgb(68, 68, 68);
-        font-size: 1.9rem !important;
-    }
-    
-    .wpcf7-form .wpcf7-submit {
-        box-shadow: none !important;
-    }
-    
-    ul.navbar-nav>li.current_page_item>a {
-        color: #ec951a;
-    }
-    
-    .grid_wraper {
-        width: 100% !important;
-    }
-    
-    .media_grid_col {
-        padding: 0 !important;
-    }
-    
-    .btVerticalMenuTrigger .bt_bb_icon {
-        margin: 22px 0px 22px 20px !important;
-    }
-    
-    @media only screen and (max-width: 420px) {
+        
+        .wpcf7-form .wpcf7-form-control.wpcf7-submit {
+            color: rgb(68, 68, 68) !important;
+            border: 1px solid rgba(0, 0, 0, .4);
+        }
+        
+        .wpcf7-form .wpcf7-form-control.wpcf7-submit:hover {
+            background-color: rgb(68, 68, 68);
+            color: #fff !important;
+        }
+        
+        .menuPort .leftNav {
+            position: relative !important;
+            width: 100% !important;
+            padding-right: 0 !important;
+            right: auto !important;
+            left: 0 !important;
+            margin-right: 0 !important;
+        }
+        
+        .menuPort .leftNav ul a {
+            text-transform: uppercase;
+            color: #191919;
+        }
+        
+        .menuPort nav ul li {
+            margin-top: auto !important;
+            margin-bottom: auto !important;
+        }
+        
+        .menuPort .leftNav ul a img {
+            max-height: 50px;
+        }
+        
+        .menu_homelink>a {
+            padding: 5px 10px 0px 10px !important;
+        }
+        
+        .menuPort .leftNav ul a:hover {
+            color: #191919;
+            text-decoration: underline;
+        }
+        
+        .btMenuHorizontal.btMenuCenter .menuPort .leftNav ul {
+            float: none !important;
+        }
+        
+        .lang_icon {
+            position: fixed;
+            top: 13px;
+            right: 13px;
+            z-index: 10010;
+        }
+        
+        .lang_icon .lang-item {
+            display: block;
+        }
+        
+        .btMenuVertical #navbarNav>ul.navbar-nav {
+            flex-direction: column;
+            color: #eae4da;
+            background-color: #000;
+        }
+        
+        #navbarNav>ul.navbar-nav {
+            height: auto;
+            display: flex;
+            justify-content: center;
+            background-color: #eae4da;
+            float: none;
+        }
+        
+        .navbar-toggler {
+            position: absolute;
+        }
+        
+        #lang_choise {
+            display: flex;
+        }
+        
+        .lang_icon .lang-item a {
+            color: #191919;
+            font-size: 13px;
+        }
+        
+        .btMenuVertical .lang_icon .lang-item a {
+            font-size: 13px;
+        }
+        
+        #lang_choise {
+            display: flex;
+        }
+        
+        .lang-item.lang-item-59.lang-item-nl.lang-item-first>a {
+            padding-right: 2px;
+        }
+        
+        .menuPort {
+            width: 100vw;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-bottom: solid 2px rgb(68, 68, 68);
+            background-color: #eae4da;
+        }
+        
+        .bt_bb_headline {
+            padding-top: 2em;
+        }
+        
+        .btVerticalHeaderTop {
+            padding: 0 !important;
+        }
+        
+        .lang-item.lang-item-75.lang-item-en.current-lang>a {
+            padding-left: 2px;
+        }
+        
+        .btMenuVerticalLeft.btMenuVerticalOn .btContentWrap.btClear {
+            transform: none;
+        }
+        
+        .btMenuVerticalLeft.btMenuVerticalOn .btContentWrap {
+            transform: none !important;
+        }
+        
+        .btMenuVerticalLeft.btMenuVerticalOn #navbarNav>ul {
+            background-color: #191919;
+        }
+        
+        .btMenuVerticalLeft.btMenuVerticalOn #navbarNav>ul.navbar-nav {
+            flex-direction: column;
+            background-color: #191919;
+        }
+        
+        .btMenuVerticalLeft.btMenuVerticalOn #navbarNav>ul {
+            background-color: #191919;
+        }
+        
+        .mainHeader {
+            position: fixed !important;
+        }
+        
+        .btMenuVertical .mainHeader {
+            z-index: 10010 !important;
+        }
+        
+        .btVerticalHeaderTop {
+            position: fixed;
+        }
+        
+        .btMenuVerticalLeft.btMenuVerticalOn #navbarNav>ul.navbar-nav a {
+            color: #fff;
+        }
+        
+        .btMenuVertical .mainHeader nav ul li.menu_homelink {
+            display: none;
+        }
+        
+        .gutter div.port {
+            max-width: initial;
+            padding: 0;
+        }
+        
+        .seventy>span>img {
+            width: 70%;
+            height: auto;
+            margin: auto;
+            padding-bottom: 40px;
+        }
+        
+        .btLightSkin {
+            background-color: #eae4da !important;
+        }
+        
+        .childLogoArea {
+            position: relative;
+            background-color: #eae4da;
+        }
+        
+        .childLogoArea span a {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            width: fit-content;
+            padding: 1em;
+        }
+        
+        .childLogoArea span a img {
+            max-height: 50px;
+        }
+        
+        .childLogoArea span a {
+            padding: 5px 10px 0 10px;
+        }
+        
+        .btVerticalHeaderTop {
+            position: fixed !important;
+            border-bottom: black 1px solid;
+        }
+        
+        .btContentWrap {
+            margin-top: 60px;
+        }
+        
+        .btTransparentLightHeader .btVerticalMenuTrigger.childTrigger {
+            position: absolute;
+            z-index: 10050;
+            transition: all 600ms;
+            /* right: -40px; */
+        }
+        
+        .btTransparentLightHeader .btVerticalMenuTrigger.childTrigger .bt_bb_icon:before,
+        .btTransparentLightHeader .btVerticalMenuTrigger.childTrigger .bt_bb_icon:after,
+        .btTransparentLightHeader .btVerticalMenuTrigger.childTrigger .bt_bb_icon .bt_bb_icon_holder:before {
+            border-top-color: #191919;
+        }
+        
+        .btTransparentLightHeader.btMenuVerticalOn .btVerticalMenuTrigger.childTrigger .bt_bb_icon:before,
+        .btTransparentLightHeader.btMenuVerticalOn .btVerticalMenuTrigger.childTrigger .bt_bb_icon:after,
+        .btTransparentLightHeader.btMenuVerticalOn .btVerticalMenuTrigger.childTrigger .bt_bb_icon .bt_bb_icon_holder:before {
+            border-top-color: #fff;
+        }
+        
+        .btTransparentLightHeader .btVerticalMenuTrigger.childTrigger:hover .bt_bb_icon:before,
+        .btTransparentLightHeader .btVerticalMenuTrigger.childTrigger:hover .bt_bb_icon:after,
+        .btTransparentLightHeader .btVerticalMenuTrigger.childTrigger:hover .bt_bb_icon .bt_bb_icon_holder:before {
+            border-top-color: #191919 !important;
+            border-top-width: 2px !important;
+            /* transform: none !important */
+        }
+        
+        .btTransparentLightHeader.btMenuVerticalOn .btVerticalMenuTrigger.childTrigger:hover .bt_bb_icon:before,
+        .btTransparentLightHeader.btMenuVerticalOn .btVerticalMenuTrigger.childTrigger:hover .bt_bb_icon:after,
+        .btTransparentLightHeader.btMenuVerticalOn .btVerticalMenuTrigger.childTrigger:hover .bt_bb_icon .bt_bb_icon_holder:before {
+            border-top-color: #fff !important;
+            /* border-top-width: 2px !important; */
+            /* transform: none !important */
+        }
+        
+        .btVerticalMenuTrigger:hover .bt_bb_icon:before {
+            -webkit-transform: none !important;
+            -moz-transform: none !important;
+            -ms-transform: none !important;
+            transform: none !important;
+        }
+        
+        .btPageWrap .btVerticalMenuTrigger {
+            display: none;
+        }
+        
+        .btVerticalMenuTrigger:hover .bt_bb_icon:after {
+            -webkit-transform: none !important;
+            -moz-transform: none !important;
+            -ms-transform: none !important;
+            transform: none !important;
+        }
+        
+        body:not(.btPageTransitions) {
+            min-height: 100vw !important;
+        }
+        
+        .btMenuVerticalLeft.btMenuVerticalOn .btVerticalHeaderTop {
+            transform: none !important;
+        }
+        
+        .btMenuVerticalLeft.btMenuVerticalOn .btVerticalMenuTrigger.childTrigger {
+            transform: translateX(300px);
+        }
+        
         .bt_bb_section[style*="background-image"] {
             background-size: 100% auto !important;
             background-position: top !important;
         }
+        
+        .btMenuVertical .mainHeader .menuPort {
+            justify-content: center;
+            height: 60vh;
+        }
+        
         .quote {
             padding: 30px 50px;
             font-size: 1rem;
         }
+        
         .bt_bb_headline>.bt_bb_headline_subheadline {
             font-size: 1rem !important;
             text-align: right;
         }
+        
+        .bt_bb_row>.bt_bb_column.about_text_wraper>.bt_bb_column_content {
+            width: 80% !important;
+            text-align: left;
+        }
+        
+        #about_cover.bt_bb_section[style*="background-image"] {
+            background-size: 50% auto !important;
+            background-position: top left !important;
+        }
+        
+        .page_title {
+            padding-top: 100px;
+        }
+        
+        .page_title>span {
+            font-size: 2.8rem !important;
+        }
+        
+        .bt_bb_headline .bt_bb_headline_superheadline {
+            font-size: 2.8rem !important;
+        }
+        
+        .wpcf7-form .wpcf7-submit {
+            box-shadow: none !important;
+        }
+        
+        .btVerticalMenuTrigger .bt_bb_icon {
+            margin: 22px 0px 22px 20px !important;
+        }
+        
         .bt_bb_row>.bt_bb_column.about_text_wraper>.bt_bb_column_content,
         .about_q_text {
             width: 80% !important;
@@ -432,19 +338,7 @@
             margin-right: auto;
             margin-left: auto;
         }
-        #about_cover.bt_bb_section[style*="background-image"] {
-            background-size: 50% auto !important;
-            background-position: top left !important;
-        }
-        .page_title {
-            padding-top: 100px;
-        }
-        .page_title>span {
-            font-size: 2.8rem !important;
-        }
-        .bt_bb_headline .bt_bb_headline_superheadline {
-            font-size: 2.8rem !important;
-        }
+        
         #st_about1-toggle-show8,
         #st_about2-toggle-show8,
         #st_about3-toggle-show8,
@@ -459,115 +353,136 @@
             text-decoration: underline;
             font-size: 1.1rem;
         }
+        
         .about_text_wraper>.bt_bb_column_content>.bt_bb_text>p,
         .about_q_text>p {
             font-size: 1.1rem;
         }
+        
         .about_text_wraper>.bt_bb_column_content>.bt_bb_text>h3 {
             font-size: 1.3rem;
         }
+        
         .about_text_wraper>.bt_bb_column_content>.bt_bb_text>.sh-content.sh-show>p,
         .about_q_text .sh-content>p {
             font-size: 1.1rem;
         }
+        
         .persone_wraper {
             margin: 40px 0;
         }
+        
         .contact_info .bt_bb_column_content {
             width: 80% !important;
             margin-right: auto;
             margin-left: auto;
         }
+        
         .contact_info .bt_bb_column_content h3 {
             font-size: 2.2rem !important;
             padding-bottom: 18px;
         }
+        
         .contact_info .bt_bb_column_content h4 {
             font-size: 1.4rem !important;
             padding-bottom: 2px;
         }
+        
         .contact_info .bt_bb_column_content i {
             font-size: 1.3rem !important;
             line-height: 2.1rem;
             padding-right: 10px;
         }
+        
         .contect_icons_wraper {
             margin-top: 20px;
         }
+        
         .contact_info .bt_bb_column_content .contect_icons_wraper>a>i {
             color: rgb(68, 68, 68);
             font-size: 1.9rem !important;
         }
-        .wpcf7-form .wpcf7-submit {
-            box-shadow: none !important;
-        }
+        
         ul.navbar-nav>li.current_page_item>a {
             color: #ec951a;
         }
+        
         .grid_wraper {
             width: 100% !important;
         }
+        
         .media_grid_col {
             padding: 0 !important;
         }
-        .btVerticalMenuTrigger .bt_bb_icon {
-            margin: 22px 0px 22px 20px !important;
-        }
+        
         .about_opener_wraper {
             min-height: 100vh;
             margin-bottom: 100px;
         }
+        
         .bt_bb_row .about_group_portret.bt_bb_column[style*="background-image"] {
             min-height: 60vh;
             background-size: 100% auto;
             background-position: top;
         }
+        
         .bt_bb_image.seventy.bt_bb_shape_square.bt_bb_align_inherit.bt_bb_hover_style_simple.bt_bb_content_display_always.bt_bb_content_align_middle {
             width: 100%;
         }
+        
         .about_q_text {
             margin-top: 40px;
         }
+        
         #about_cover>.bt_bb_port>.bt_bb_cell {
             width: 100%;
         }
+        
         .about_q_title>h1 {
             font-size: 2.5rem;
         }
+        
         .event_image {
             width: 100%;
             padding-bottom: 75%;
             background-size: cover;
             background-position: center;
         }
+        
         .info_wraper {
             padding: 15px 25px;
             border-right: 2px solid;
             border-left: 2px solid;
             border-bottom: 2px solid;
         }
+        
         h2.event_title {
             font-size: 1.8rem;
             color: #ec951a;
         }
+        
         .date-time-wraper,
         .location-wraper {
             display: flex;
         }
+        
         .event_date,
         .event_time,
         .location {
             font-size: 1.2rem;
             margin-bottom: 0;
         }
+        
         .date-time-wraper>.fas,
         .location-wraper>.fas {
             line-height: 2rem;
             padding-right: 5px;
         }
+        
         .date-time-wraper>.fas.fa-clock {
             padding-left: 10px;
         }
+        
         .concert {
             width: fit-content;
             padding: 3px 15px;
@@ -577,6 +492,7 @@
             line-height: 1.2rem;
             margin-left: auto;
         }
+        
         @media only screen and (max-width: 420px) {
             .bt_bb_section[style*="background-image"] {
                 width: 100vw;
@@ -618,6 +534,7 @@
             }
         }
         /*xs*/
+        
         @media screen and (min-width: 420px) and (max-width: 768px) {
             .bt_bb_section[style*="background-image"] {
                 width: 100vw;
@@ -641,6 +558,7 @@
             }
         }
         /*md*/
+        
         @media screen and (min-width: 768px) and (max-width: 992px) {
             .bt_bb_section[style*="background-image"] {
                 width: 100vw;
