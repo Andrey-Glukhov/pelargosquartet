@@ -278,7 +278,7 @@
         }
         
         .btMenuVerticalLeft.btMenuVerticalOn .btVerticalMenuTrigger.childTrigger {
-            transform: translateX(300px);
+            transform: translateX(275px);
         }
         
         .bt_bb_section[style*="background-image"] {
@@ -493,6 +493,22 @@
             color: #eae4da;
             line-height: 1.2rem;
             margin-left: auto;
+        }
+        
+        .btContent .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: -10px;
+            margin-right: -10px;
+            gap: 1.5rem;
+            /* justify-content: space-between; */
+        }
+        
+        .btContent .row:last-child {}
+        
+        .event_preview {
+            flex: 0 1 30%;
+            margin: 10px;
         }
         
         @media only screen and (max-width: 420px) {

@@ -29,7 +29,7 @@ get_header(); ?>
         }
     ?>
 
-<div class = "col-md-4 col-sm-6 col-12" style="display: flex; margin-bottom: 20px;">
+<!-- <div class = "col-md-4 col-sm-6 col-12" style="display: flex; margin-bottom: 20px;"> -->
         <div class = "event_preview"  onclick="location.href='<?php the_permalink() ?>'">
         <div class="event_image" style="background-image:url(<?php the_field('event_image'); ?>);"></div>
 <div class="info_wraper">
@@ -41,7 +41,7 @@ get_header(); ?>
 		  <div class="<?php echo $cat; ?>"><?php echo $cat; ?></div>
     </div>
         </div>
-      </div>
+      <!-- </div> -->
 	
     <?php endwhile; ?>
   <?php endif; ?>
