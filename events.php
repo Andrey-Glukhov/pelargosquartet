@@ -5,7 +5,7 @@
 get_header(); ?>
 
 <div class="container">
-    <div class="row">
+    <div class="row events_wraper">
 <?php $args = array(
         'post_type' => 'events',
 		 'post_status' => 'publish',
