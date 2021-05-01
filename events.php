@@ -4,7 +4,7 @@
 */
 get_header(); ?>
 
-<div class="container" style="padding-top:60px;">
+<div class="container">
     <div class="row">
 <?php $args = array(
         'post_type' => 'events',

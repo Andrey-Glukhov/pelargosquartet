@@ -504,7 +504,9 @@
             /* justify-content: space-between; */
         }
         
-        .btContent .row:last-child {}
+        .btContent .container {
+            padding: 60px 10px;
+        }
         
         .event_preview {
             flex: 0 1 30%;
