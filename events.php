@@ -4,20 +4,20 @@
 */
 get_header(); ?>
 
-<div class="container" style="padding-top:60px;">
+<div class="container">
     <div class="row events_wraper">
 <?php $args = array(
         'post_type' => 'events',
 		 'post_status' => 'publish',
          'order' => 'ASC',
          'orderby' => 'meta_value',
-        'meta_query' => array(
-            array(
-            'key' => 'event_date',
-            'compare' => '>=',
-			'value' =>date('Ymd'),
-            )
-        ),
+        // 'meta_query' => array(
+        //     array(
+        //     'key' => 'event_date',
+        //     'compare' => '>=',
+		// 	'value' =>date('Ymd'),
+        //     )
+        // ),
         'meta_key' => 'event_date',
 		'meta_type' => 'DATE'
     );

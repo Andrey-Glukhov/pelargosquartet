@@ -72,7 +72,7 @@
         .btMenuVertical #navbarNav>ul.navbar-nav {
             flex-direction: column;
             color: #eae4da;
-            background-color: #000;
+            background-color: #191919;
         }
         
         #navbarNav>ul.navbar-nav {
@@ -509,6 +509,10 @@
             /* justify-content: space-between; */
         }
         
+        .btContent .container {
+            padding: 60px 10px;
+        }
+        
         .event_preview {
             flex: 1 1 30%;
             margin: 10px;
@@ -557,6 +561,11 @@
             font-size: 2.3rem;
             letter-spacing: 4px;
             text-align: center;
+        }
+        @media only screen and  (max-width: 360px) {
+            .btMenuVerticalLeft.btMenuVerticalOn .btVerticalMenuTrigger.childTrigger {
+                transform: translateX(215px);
+            }
         }
         
         @media only screen and (max-width: 420px) {
