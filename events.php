@@ -9,7 +9,7 @@ get_header(); ?>
 <?php $args = array(
         'post_type' => 'events',
 		 'post_status' => 'publish',
-         'order' => 'ASC',
+         'order' => 'DESC',
          'orderby' => 'meta_value',
         // 'meta_query' => array(
         //     array(
