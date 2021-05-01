@@ -72,7 +72,7 @@
         .btMenuVertical #navbarNav>ul.navbar-nav {
             flex-direction: column;
             color: #eae4da;
-            background-color: #000;
+            background-color: #191919;
         }
         
         #navbarNav>ul.navbar-nav {
@@ -560,6 +560,11 @@
             padding-top: 2rem;
             font-size: 2.3rem;
             letter-spacing: 4px;
+        }
+        @media only screen and  (max-width: 360px) {
+            .btMenuVerticalLeft.btMenuVerticalOn .btVerticalMenuTrigger.childTrigger {
+                transform: translateX(215px);
+            }
         }
         
         @media only screen and (max-width: 420px) {

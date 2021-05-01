@@ -11,13 +11,13 @@ get_header(); ?>
 		 'post_status' => 'publish',
          'order' => 'ASC',
          'orderby' => 'meta_value',
-        'meta_query' => array(
-            array(
-            'key' => 'event_date',
-            'compare' => '>=',
-			'value' =>date('Ymd'),
-            )
-        ),
+        // 'meta_query' => array(
+        //     array(
+        //     'key' => 'event_date',
+        //     'compare' => '>=',
+		// 	'value' =>date('Ymd'),
+        //     )
+        // ),
         'meta_key' => 'event_date',
 		'meta_type' => 'DATE'
     );
