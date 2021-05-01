@@ -626,6 +626,12 @@ h2.single_event_title {
     margin-top: 80px;
 }
 
+
+.mfp-container .mfp-arrow.mfp-arrow-right:before,
+.mfp-container .mfp-arrow.mfp-arrow-left:before {
+    content: '' !important;
+}
+
 @media only screen and (max-width: 360px) {
   .btMenuVerticalLeft.btMenuVerticalOn .btVerticalMenuTrigger.childTrigger {
     transform: translateX(215px);
