@@ -30,4 +30,20 @@
 <?php endwhile; else : ?>
 <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
 <?php endif; ?>
+
+<div class="row">
+    <div id="mc_embed_signup">
+        <form action="https://pelargosquartet.us1.list-manage.com/subscribe/post?u=4387b84fbb2ea8c9a666c6506&amp;id=4f6aebfa83" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+            <label for="mce-EMAIL">Subscribe</label>
+            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4387b84fbb2ea8c9a666c6506_4f6aebfa83" tabindex="-1" value=""></div>
+            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!--End mc_embed_signup—>
 <?php get_footer(); ?>

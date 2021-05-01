@@ -584,6 +584,26 @@ h2.single_event_title {
   letter-spacing: 4px;
   text-align: center;
 }
+#mc_embed_signup input.email {
+    font-size: 15px;
+    display: block;
+    margin: 0 4% 10px 0;
+    min-height: 32px;
+    width: 58%;
+    min-width: 130px;
+    border-radius: 50px;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+#mc_embed_signup input.button {
+    color: rgb(68, 68, 68);
+    border: 1px solid rgba(0, 0, 0, .4);
+}
+#mc_embed_signup input.button:hover {
+    color: #fff;
+    background-color: #444;
+}
+
 @media only screen and (max-width: 360px) {
   .btMenuVerticalLeft.btMenuVerticalOn .btVerticalMenuTrigger.childTrigger {
     transform: translateX(215px);
